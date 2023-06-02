@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
 //        graph.addSeries(series);
     }
     private void updateSpectrumGraph(Complex[] complexSamples, GraphView graphView) {
-        //MY FILTER MAX
+        //AVERAGE FILTER
         int dataPointCounter = 0;
         int maxFacter = 10,max = 0;
         DataPoint[] frequencyDomain = new DataPoint[(complexSamples.length/(2*maxFacter))+1];
